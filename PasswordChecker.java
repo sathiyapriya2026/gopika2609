@@ -1,6 +1,5 @@
 import java.util.Scanner;
-
-class Main {
+class Passwordchecker {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -19,11 +18,11 @@ class Main {
         }
 
         if (length >= 8 && hasUpper && hasLower && hasDigit && hasSpecial) {
-            System.out.println("Strong Password 💪");
+            System.out.println("Strong Password ");
         } else if (length >= 6) {
-            System.out.println("Medium Password ⚠️");
+            System.out.println("Medium Password ");
         } else {
-            System.out.println("Weak Password ❌");
+            System.out.println("Weak Password ");
         }
     }
 }
